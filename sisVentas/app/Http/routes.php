@@ -16,3 +16,8 @@ Route::get('/', function () {
 });
 
 Route::resource('almacen/categoria','CategoriaController');
+Route::resource('almacen/articulo','ArticuloController');
+Route::resource('ventas/cliente','ClienteControlador');
+Route::resource('compras/proveedor','ProveedorControlador');
+Route::resource('compras/ingreso','IngresoController');
+Route::resource('ventas/venta','VentaController');

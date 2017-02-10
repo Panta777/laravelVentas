@@ -1,4 +1,4 @@
-<?ph
+<?php
 
 namespace sisVentas;
 
@@ -6,20 +6,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class Categoria extends Model
 {
-    //MANEJO DE FUNCIONES DE TABLA CATEGORIA 
+    protected $table='categoria';
 
-    protected $table = 'categoria';
+    protected $primaryKey='idcategoria';
 
-    protected $primaryKey = 'idcategoria';
-
-    public $timestamps = false;
+    public $timestamps=false;
 
 
-protected $fillable = [
-	'nombre',
-	'descripcion'
-	'condicion'
-};
+    protected $fillable =[
+    	'nombre',
+    	'descripcion',
+    	'condicion'
+    ];
 
-protected $guarded =  [
-];
+    protected $guarded =[
+
+    ];
+
+}
